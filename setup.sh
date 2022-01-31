@@ -407,7 +407,7 @@ cd $OLDPWD
 
 
 echo "**** Python virtualenv setup ****"
-[[ ! -d "${ALLSKY_DIRECTORY}/virtualenv" ]] && mkdir -m 755 "${ALLSKY_DIRECTORY}/virtualenv"
+[[ ! -d "${ALLSKY_DIRECTORY}/virtualenv" ]] && sudo mkdir -m 755 "${ALLSKY_DIRECTORY}/virtualenv"
 if [ ! -d "${ALLSKY_DIRECTORY}/virtualenv/indi-allsky" ]; then
     virtualenv -p python3 ${ALLSKY_DIRECTORY}/virtualenv/indi-allsky
 fi
